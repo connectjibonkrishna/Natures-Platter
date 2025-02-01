@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature's Palatter</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ca41441c73.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
           theme: {
                 extend: {
                     colors: {
-                        green1: '#179800',
+                        'green1': '#179800',
+                        'green2': '#115414',
+                        'blue1': '#102861',
+                        'blue2': '#2A4D97',
+                        'bg1': '#EFEBE3',
+                        'text1': '#111111',
+                        'text2': '#FFFFFF',
                     },
                     fontFamily: {
                         sora: ['Sora', 'sans-serif'],
@@ -23,9 +29,109 @@
                 }
             }
         }
-      </script>
-    </head>
+    </script>
+</head>
 <body class="font-sora">
-    
+    <!-- navbar section  -->
+    <header class="mb-20 bg-gradient-to-b from-[#ffffff] to-[#EFEBE3]">
+        <nav class="mx-auto px-6 lg:px-28 py-3 flex justify-between text-xl items-center mb-20 border border-green1">
+            <div class="md:hidden">
+                <img class="w-12" src="assets/leafLogo.png" alt="">
+            </div>
+            <div class="hidden md:flex">
+                <img src="assets/logo-header.png" alt="">
+            </div>
+            <div class="hidden lg:flex">
+                <ul class="flex gap-8">
+                    <li>Product</li>
+                    <li>Services</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="hidden md:flex items-center gap-6">
+                <div class="space-x-6">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="flex gap-3">
+                    <button class="px-7 py-2 rounded-lg border border-green1">Login</button>
+                    <button class="px-7 py-2 rounded-lg bg-green1 text-white">Register</button>
+                </div>
+            </div>
+            <div class="text-green1 md:hidden">
+                <i class="fa-solid fa-bars text-3xl"></i>
+            </div>
+        </nav>
+
+        <div class="flex flex-col items-center text-center px-6">
+            <div class=" mb-9">
+                <h1 class="font-semibold text-4xl md:text-6xl mb-8">
+                    Freshness <span class="text-green1">You Can</span> <br><span class="text-green1">Count</span> On, Prices You’ll Love!
+                </h1>
+                <p class="text-xl">
+                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
+                </p>
+            </div>
+             <div>
+                <img src="assets/hero-vegetables.png" alt="">
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Item 1</a></li>
+            <li>
+              <details>
+                <summary>Parent</summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Button</a>
+        </div>
+    </div>
 </body>
 </html>
