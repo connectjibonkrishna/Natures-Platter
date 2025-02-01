@@ -9,7 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ca41441c73.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
           theme: {
@@ -25,6 +31,8 @@
                     },
                     fontFamily: {
                         sora: ['Sora', 'sans-serif'],
+                        poppins: ['Poppins', 'serif'],
+                        adlam: ['ADLaM Display', 'serif']
                     }
                 }
             }
@@ -34,7 +42,7 @@
 <body class="font-sora">
     <!-- navbar section  -->
     <header class="mb-20 bg-gradient-to-b from-[#ffffff] to-[#EFEBE3]">
-        <nav class="mx-auto px-6 lg:px-28 py-3 flex justify-between text-xl items-center mb-20 border border-green1">
+        <nav class="mx-auto px-6 lg:px-28 py-3 flex justify-between text-xl items-center mb-20 border border-green1 md:border-0">
             <div class="md:hidden">
                 <img class="w-12" src="assets/leafLogo.png" alt="">
             </div>
@@ -128,7 +136,7 @@
             <div class="md:flex gap-6 justify-between">
                 <div class="bg-gradient-to-br from-green1 to-green-100 sm:w-[424px] h-[402px] relative px-8 py-8 mb-6 md:mb-0">
                     <img src="assets/vegetable-offer.png" alt="" class="absolute bottom-0 right-2">
-                    <h3 class="text-4xl text-bg1">30% off</h3>
+                    <h3 class="text-4xl text-bg1 font-adlam">30% off</h3>
                     <p class="text-lg my-5">Discover a world of treats, toys, and essentials handpicked for</p>
                     <button class="text-xl px-8 py-3 bg-text2 rounded-lg">Buy Now</button>
                 </div>
@@ -259,12 +267,36 @@
                       </div>
                     </div>
                 </div>
-            </div>
-
-
-
-            
+            </div> 
         </div>
     </section>
+
+    <!-- offer section  -->
+     <section class="w-11/12 sm:w-10/12 mx-auto my-36">
+        <h3 class="text-green1 mb-12 text-4xl font-semibold">Arrival & Offers</h3>
+        <div class="lg:flex gap-5  font-poppins">
+          <div class="bg-green2 flex px-6 sm:px-10 py-5 sm:py-7 relative  h-52 sm:h-[344px] min-w-[360px] grow rounded-3xl md:min-w-[600px] mb-5 lg:mb-0">
+            <div>
+              <img src="assets/dawat-logo.png" alt="" class="w-32 sm:min-w-[93px]">
+              <h4 class="py-2 sm:py-4 px-4 sm:px-10 my-4 sm:my-7 text-text2 text-xs sm:text-lg md:text-2xl bg-[#63B76D] rounded-xl">Cook Exotic Dishes</h4>
+              <h2 class="text-xl sm:text-3xl md:text-[40px]  text-text2">UP to <span class="text-xl sm:text-3xl md:text-[40px] font-bold">20% OFF</span></h2>
+            </div>
+            <div>
+              <img src="assets/dawat-mock-up.png" alt="" class="absolute bottom-0 right-0 w-48 md:w-80">
+            </div>
+          </div>
+
+          <div class="bg-blue1 flex px-6 sm:px-10 py-5 sm:py-7 relative h-52 sm:h-[344px] min-w-[360px] md:w-5/12 rounded-3xl md:min-w-[420px]">
+            <div>
+              <img src="assets/india-gate-logo.png" alt="" class="w-16 sm:min-w-[93px]">
+              <h4 class="py-2 sm:py-4 px-4 sm:px-10 mt-1 mb-3 sm:my-7 text-text2 text-xs sm:text-lg md:text-2xl bg-blue2 rounded-xl">Cook Exotic Dishes</h4>
+              <h2 class="text-xl sm:text-3xl md:text-[40px]  text-text2">UP to <span class="text-xl sm:text-3xl md:text-[40px] font-bold">20% OFF</span></h2>
+            </div>
+            <div>
+              <img src="assets/india-gate-mock-up.png" alt="" class="absolute bottom-0 right-0 pr-3 w-[120px] sm:w-44">
+            </div>
+          </div>
+        </div>
+      </section>
 </body>
 </html>
